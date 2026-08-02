@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>People</title>
+	</head>
+
+	<body>
+		<h1>People</h1>
+	
+		<table border = “1”>
+		<tr>
+			<th>Full name</th>
+			<th>Screen name</th>
+			<th>Identity</th>
+		</tr>
+		
+		{%for person in record%}
+		<tr>
+			<td>{{person[0]}}</td>
+			<td>{{person[1]}}</td>
+			<td>{{person[2]}}</td>
+		</tr>
+		{%end for%}
+		</table>
+	</body>
+
+</html>
